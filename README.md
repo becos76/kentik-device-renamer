@@ -4,6 +4,8 @@ Rename devices in the Kentik portal using the Device API (`v202504beta2`, REST).
 It's a single Python file with no runtime dependencies (Python 3.9+). The project is managed
 with [uv](https://docs.astral.sh/uv/).
 
+For how it works and why, see the [design document](docs/DESIGN.md).
+
 ## Supported devices
 
 The tool supports devices with **NMS**, **Flow**, or both enabled, using the
