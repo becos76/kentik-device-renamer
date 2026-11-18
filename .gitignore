@@ -1,0 +1,12 @@
+# Credentials
+.env
+
+# Per-device snapshots (may contain SNMP/BGP credentials)
+dumps/
+
+# Device lists / rename mappings (contain real device names and IDs)
+*.csv
+
+__pycache__/
+.venv/
+dist/
