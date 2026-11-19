@@ -26,6 +26,8 @@ A command-line tool that renames devices in the Kentik portal, one at a time or 
 
 ## Overview
 
+> **Note:** this is an unofficial tool, not affiliated with, endorsed by, or supported by Kentik. Use it at your own risk; see the notice in the [README](../README.md).
+
 Renaming a device sounds like a one-field change, but the Device API has no rename call. The only way to change `device_name` is `UpdateDevice`, and its documentation says it *replaces* the device's configuration with the attributes in the request. A request that carries only the new name could clear sending IPs, the sample rate, BGP settings and NMS settings.
 
 The tool treats every rename as a full read-modify-write. It reads the device, rebuilds the update from the current configuration with only the name changed, sends it, then reads the device again and compares. Anything other than the name that changed is reported as a failure and the run stops.

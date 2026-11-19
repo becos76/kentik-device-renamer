@@ -6,6 +6,18 @@ with [uv](https://docs.astral.sh/uv/).
 
 For how it works and why, see the [design document](docs/DESIGN.md).
 
+> [!WARNING]
+> **Unofficial tool. Use at your own risk.**
+> This is an independent project. It is not affiliated with, endorsed by, or supported by
+> Kentik. "Kentik" is used only to identify the service this tool works with.
+>
+> It changes live device configuration in your Kentik account. You are responsible for
+> testing it (start with a dry run and `--dump` on a single device), for checking the
+> results, and for any effect on your account, devices or monitoring. The software is
+> provided "as is", without warranty of any kind; see the [license](LICENSE) (sections 7
+> and 8). Don't contact Kentik support about problems caused by this tool; open an issue
+> here instead.
+
 ## Supported devices
 
 The tool supports devices with **NMS**, **Flow**, or both enabled, using the
